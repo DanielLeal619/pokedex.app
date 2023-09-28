@@ -1,0 +1,90 @@
+.pokedex__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px 30px;    
+    margin-top: 40px;
+}
+
+.pokedex__phrase {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;    
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pokedex__trainer {
+    color: #E50013;
+}
+
+.pokedex__input {
+    width: 300px;
+    height: 25px;
+    border: 1px solid gray;
+    border-bottom-left-radius: 0.7em;
+    border-top-left-radius: 0.7em;   
+}
+
+@media only screen and (max-width: 768px) {
+    .pokedex__input {
+        max-width: 200px;         
+    }
+}
+
+.pokedex__button {
+    color: white;
+    background-color: #E50013;
+    border: 1px solid #E50013;
+    height: 25px;
+    border-top-right-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+    cursor: pointer;
+    transition: 0.3s;  
+    font-family: 'Press Start 2P', cursive;  
+}
+
+.pokedex__bar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.pokedex__type option {
+    color: #E50013;   
+}
+
+.pokedex__type select {
+    color: #E50013;
+    font-size: 1em;
+    padding: 0.3em;
+    border-radius: 0.5em;
+}
+
+.pokedex__search{
+    display: flex;    
+}
+
+.banner__img {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.banner__letter {    
+    position: absolute;
+    width: 30%;   
+    top: 0.4em; 
+    cursor: pointer;    
+}
+
+@media only screen and (max-width: 768px) {
+    .banner__letter {                
+        min-width: 200px;              
+    }
+}
+
+.back__btn {
+    position: relative;
+    top: 0;
+    right: 0;
+}

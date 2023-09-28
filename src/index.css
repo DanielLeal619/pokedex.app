@@ -1,0 +1,43 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Mukta+Vaani:wght@600&family=Overpass:wght@200&family=Press+Start+2P&display=swap');
+
+/* RESET */
+
+* {
+    box-sizing: border-box;    
+}
+
+html {
+    font-family: 'Mukta Vaani', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, p, ul, hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+ul, li {
+    padding-left: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+input {
+    font-family: inherit;
+    outline: none;
+    border: none;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+}
