@@ -161,7 +161,9 @@
 }
 
 .btns__id {
-    font-size: 25px;
+    font-size: 30px;
     color: #E30013;
     cursor: pointer;
+    background-color: inherit;
 }
+

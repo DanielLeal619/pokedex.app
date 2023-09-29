@@ -1,12 +1,12 @@
 import React from 'react'
 import "./PokedexPage/styles/PaginationNum.css"
 
-const Pagination = ({totalPosts,postPerPage,setCurrentPage,currentPage}) => {
+const Pagination = ({ totalPosts, postPerPage, setCurrentPage, currentPage }) => {
 
     let pages = []
     let limit = Math.ceil(totalPosts / postPerPage)
 
-    for (let i = 1; i < limit+1; i++) {
+    for (let i = 1; i < limit + 1; i++) {
         pages.push(i)
     }
 
@@ -23,11 +23,11 @@ const Pagination = ({totalPosts,postPerPage,setCurrentPage,currentPage}) => {
         <div className='btn__pag'>
             <button className='btn__nextprev' disabled={currentPage === 1} onClick={rest}>←</button>
             {
-                pages.map((page, i) =>{
-                    return <button key={i} onClick={() => setCurrentPage(page)} className={page == currentPage ? 'active__pag' : '' }>{page}</button>
+                pages.map((page, i) => {
+                    return <button key={i} onClick={() => setCurrentPage(page)} className={page == currentPage ? 'active__pag' : 'inactive__pag'}>{page}</button>
                 })
             }
-            <button  className='btn__nextprev'  disabled={currentPage >= limit} onClick={sum}>→</button>
+            <button className='btn__nextprev' disabled={currentPage >= limit} onClick={sum}>→</button>
         </div>
 
     )

@@ -27,7 +27,13 @@
 }
 
 .active__pag {
-    background-color: white;
+    background-color: inherit;
     color: #DD1A1A;
     font-size: 1.1em;
+    cursor: pointer;
+}
+
+.inactive__pag {
+    border-radius: 0.5em;
+    width: 30px;
 }
